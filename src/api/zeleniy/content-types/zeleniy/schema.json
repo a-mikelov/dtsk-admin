@@ -4,7 +4,8 @@
   "info": {
     "singularName": "zeleniy",
     "pluralName": "zeleniys",
-    "displayName": "zeleniy"
+    "displayName": "zeleniy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "time"
     }
   }
 }
