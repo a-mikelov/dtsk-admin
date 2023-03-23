@@ -8,7 +8,7 @@ build:
 	docker build \
 	--build-arg NODE_ENV=production \
 	--build-arg STRAPI_URL=http://dtsk.ru \
-	-t alexmikelov/dtsk-admin:prod \
+	-t alexmikelov/dtsk-admin:0.0.1 \
 	-f Dockerfile.prod .
 
 prod:
