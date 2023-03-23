@@ -1,7 +1,7 @@
 version: '3'
 services:
   dtsk:
-    image: alexmikelov/dtsk-admin:0.0.1
+    image: alexmikelov/dtsk-admin:prod
     restart: always
     env_file: .env
     environment:
