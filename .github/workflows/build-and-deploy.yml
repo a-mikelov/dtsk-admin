@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push Docker image
-        run: docker push alexmikelov/dtsk-admin:prod
+        run: docker push alexmikelov/dtsk-admin:0.0.1
       # - name: Deploy to server
       #   uses: appleboy/ssh-action@v0.1.8
       #   with:
