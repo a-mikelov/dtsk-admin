@@ -15,14 +15,21 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "minLength": 10,
+      "maxLength": 180
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 10
     },
     "price": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

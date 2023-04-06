@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * zeleniy controller
+ * service controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::zeleniy.zeleniy');
+module.exports = createCoreController('api::service.service');
