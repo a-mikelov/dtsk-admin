@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": true,
-      "minLength": 10,
-      "maxLength": 180
+      "minLength": 3,
+      "maxLength": 50
     },
     "description": {
       "type": "richtext",
@@ -30,6 +30,12 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15,
+      "minLength": 3
     }
   }
 }

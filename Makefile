@@ -15,8 +15,8 @@ prod:
 	docker-compose -f docker-compose.prod.yml up -d
 
 
-copy-file:
-	scp -i ~/.ssh/id_rsa .env root@185.177.216.251:/root/dtsk-admin
+copy-to-vps:
+	scp -i ~/.ssh/id_rsa .env root@80.243.140.245:/root/dtsk-admin
 
 connect-to-vps:
-	ssh -i ~/.ssh/id_rsa root@185.177.216.251
+	ssh -i ~/.ssh/id_rsa root@80.243.140.245

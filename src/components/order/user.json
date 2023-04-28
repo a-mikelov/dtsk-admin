@@ -1,7 +1,8 @@
 {
   "collectionName": "components_order_users",
   "info": {
-    "displayName": "User"
+    "displayName": "Client",
+    "description": ""
   },
   "options": {},
   "attributes": {

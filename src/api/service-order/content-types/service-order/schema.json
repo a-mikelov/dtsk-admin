@@ -16,31 +16,24 @@
       "type": "string",
       "required": false
     },
-    "date": {
-      "type": "date"
-    },
     "user": {
       "type": "component",
       "repeatable": false,
       "component": "order.user"
     },
-    "details": {
+    "setDetails": {
       "type": "boolean",
       "default": false
-    },
-    "workTime": {
-      "type": "component",
-      "repeatable": false,
-      "component": "order.time-range"
-    },
-    "address": {
-      "type": "text",
-      "maxLength": 240
     },
     "note": {
       "type": "text",
       "maxLength": 500,
       "minLength": 5
+    },
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order.details"
     }
   }
 }
