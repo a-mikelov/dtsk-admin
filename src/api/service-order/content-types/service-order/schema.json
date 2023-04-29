@@ -4,7 +4,7 @@
   "info": {
     "singularName": "service-order",
     "pluralName": "service-orders",
-    "displayName": "ServiceOrder",
+    "displayName": "Заказы на услуги",
     "description": ""
   },
   "options": {
@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "service": {
       "type": "string",
       "required": false
     },
-    "user": {
+    "client": {
       "type": "component",
       "repeatable": false,
       "component": "order.user"

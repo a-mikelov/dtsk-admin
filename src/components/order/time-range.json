@@ -1,14 +1,15 @@
 {
   "collectionName": "components_order_time_ranges",
   "info": {
-    "displayName": "TimeRange"
+    "displayName": "TimeRange",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "min": {
+    "minTime": {
       "type": "time"
     },
-    "max": {
+    "maxTime": {
       "type": "time"
     }
   }
