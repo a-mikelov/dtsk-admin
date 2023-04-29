@@ -4,7 +4,7 @@
   "info": {
     "singularName": "service-order",
     "pluralName": "service-orders",
-    "displayName": "Заказы на услуги",
+    "displayName": "Заказанные услуги",
     "description": ""
   },
   "options": {

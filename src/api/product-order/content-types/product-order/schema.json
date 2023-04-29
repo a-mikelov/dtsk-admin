@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_orders",
+  "info": {
+    "singularName": "product-order",
+    "pluralName": "product-orders",
+    "displayName": "Заказанные товары",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "integer",
+      "required": true
+    },
+    "setDetails": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order.details"
+    },
+    "client": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order.user"
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}
