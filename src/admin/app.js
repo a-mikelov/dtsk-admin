@@ -1,4 +1,6 @@
 import Favicon from './extensions/favicon.ico';
+import LogoAuth from './extensions/logo-auth.svg';
+import LogoMenu from './extensions/logo-menu.svg';
 
 const primaryColor = '#ffc006';
 
@@ -11,6 +13,12 @@ const config = {
     },
   },
   tutorials: false,
+  auth: {
+    logo: LogoAuth
+  },
+  menu: {
+    logo: LogoMenu
+  },
   head: {
     favicon: Favicon
   },
