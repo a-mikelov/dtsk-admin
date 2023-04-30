@@ -16,7 +16,7 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "minLength": 3,
+      "minLength": 2,
       "maxLength": 50
     },
     "description": {
@@ -32,10 +32,13 @@
       "type": "uid"
     },
     "type": {
-      "type": "string",
-      "required": true,
-      "maxLength": 15,
-      "minLength": 3
+      "type": "enumeration",
+      "enum": [
+        "gasoline",
+        "bitumen",
+        "heating"
+      ],
+      "required": true
     }
   }
 }
