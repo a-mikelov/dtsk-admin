@@ -29,7 +29,8 @@
       "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "name"
     },
     "type": {
       "type": "enumeration",
