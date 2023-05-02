@@ -44,20 +44,21 @@
     "contentPosition": {
       "type": "enumeration",
       "enum": [
-        "left",
-        "right"
+        "Left",
+        "Right"
       ],
-      "default": "left",
+      "default": "Left",
       "required": true
     },
     "justifyItems": {
       "type": "enumeration",
       "enum": [
-        "left",
-        "center",
-        "right"
+        "Left",
+        "Center",
+        "Right"
       ],
-      "default": "left"
+      "default": "Left",
+      "required": true
     }
   }
 }
