@@ -40,6 +40,24 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "contentPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left",
+      "required": true
+    },
+    "contentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
     }
   }
 }
