@@ -50,7 +50,7 @@
       "default": "left",
       "required": true
     },
-    "contentAlignment": {
+    "justifyItems": {
       "type": "enumeration",
       "enum": [
         "left",
