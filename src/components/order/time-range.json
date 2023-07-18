@@ -7,10 +7,10 @@
   "options": {},
   "attributes": {
     "minTime": {
-      "type": "time"
+      "type": "string"
     },
     "maxTime": {
-      "type": "time"
+      "type": "string"
     }
   }
 }
