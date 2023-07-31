@@ -61,7 +61,10 @@
       "required": true
     },
     "order": {
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 1
     }
   }
 }
