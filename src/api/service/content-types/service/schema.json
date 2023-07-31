@@ -59,6 +59,9 @@
       ],
       "default": "Left",
       "required": true
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }
