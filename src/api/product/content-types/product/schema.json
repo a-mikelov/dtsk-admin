@@ -25,7 +25,7 @@
       "minLength": 10
     },
     "price": {
-      "type": "float",
+      "type": "decimal",
       "required": true
     },
     "slug": {
@@ -37,7 +37,8 @@
       "enum": [
         "gasoline",
         "bitumen",
-        "heating"
+        "heating",
+        "diesel"
       ],
       "required": true
     }
