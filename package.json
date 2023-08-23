@@ -12,12 +12,13 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.8.2",
     "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/provider-email-nodemailer": "^4.12.5",
     "@strapi/strapi": "4.8.2",
     "better-sqlite3": "8.0.1",
     "nodemailer": "^6.9.1",
     "pg": "^8.10.0",
-    "strapi-plugin-responsive-image": "^1.0.1",
-    "strapi-plugin-populate-deep": "^3.0.0"
+    "strapi-plugin-populate-deep": "^3.0.0",
+    "strapi-plugin-responsive-image": "^1.0.1"
   },
   "author": {
     "name": "A Strapi developer"
