@@ -11,8 +11,8 @@ module.exports = ({ env }) => ({
         },
       },
       settings: {
-        defaultFrom: 'sales@dtsk.ru',
-        defaultReplyTo: 'admin@dtsk.ru',
+        defaultFrom: env('EMAIL_ADDRESS_FROM'),
+        defaultReplyTo: env('EMAIL_ADDRESS_REPLY'),
       },
     },
   },

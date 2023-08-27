@@ -5,7 +5,6 @@ module.exports = {
     try {
       await strapi.plugins['email'].services.email.send({
         to: `${result.client.email}`,
-        from: `sales@dtsk.ru`,
         subject: `Заявка на ${result.name}`,
         html: htmlTemplate(result)
       });
@@ -478,7 +477,7 @@ function htmlTemplate(data) {
                                                                             letter-spacing: 0px;
                                                                         "
                                                                     >
-                                                                        <p style="margin: 0;"><strong>5000 р.</strong></p>
+                                                                        <p style="margin: 0;"><strong>${data.sum} р.</strong></p>
                                                                     </div>
                                                                 </td>
                                                             </tr>

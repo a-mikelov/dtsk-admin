@@ -16,7 +16,7 @@ prod:
 
 
 copy-to-vps:
-	scp -i ~/.ssh/id_rsa .env root@80.243.140.245:/root/dtsk-admin
+	scp -i ~/.ssh/id_rsa .env root@45.153.68.245:/root/dtsk-admin
 
 connect-to-vps:
-	ssh -i ~/.ssh/id_rsa root@80.243.140.245
+	ssh -i ~/.ssh/id_rsa root@45.153.68.245

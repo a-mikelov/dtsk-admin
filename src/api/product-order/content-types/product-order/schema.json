@@ -37,6 +37,10 @@
     },
     "note": {
       "type": "text"
+    },
+    "sum": {
+      "type": "decimal",
+      "required": true
     }
   }
 }

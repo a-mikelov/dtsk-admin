@@ -34,6 +34,10 @@
       "type": "component",
       "repeatable": false,
       "component": "order.details"
+    },
+    "sum": {
+      "type": "decimal",
+      "required": true
     }
   }
 }
