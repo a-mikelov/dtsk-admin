@@ -381,9 +381,7 @@ function clientHtmlTemplate(data) {
                                                                     >
                                                                         <li style="margin-bottom: 7px;">Дата заказа: ${data.createdAt}</li>
                                                                         <li style="margin-bottom: 7px;">Услуга: ${data.name}</li>
-                                                                        <li style="margin-bottom: 7px;">Дата работ: ${data.details.date}</li>
-                                                                        <li style="margin-bottom: 7px;">Время начала работ: с ${data.details.workTime.minTime} до ${data.details.workTime.maxTime}</li>
-                                                                        <li>${data.details.address}</li>
+                                                                        ${data.details ? renderDetails(data.details) : 'Доп. данные по работе не указаны'}
                                                                     </ul>
                                                                 </td>
                                                             </tr>
@@ -1202,9 +1200,7 @@ function ownerHtmlTemplate(data) {
                                                                       >
                                                                           <li style="margin-bottom: 7px;">Дата заказа: ${data.createdAt}</li>
                                                                           <li style="margin-bottom: 7px;">Услуга: ${data.name}</li>
-                                                                          <li style="margin-bottom: 7px;">Дата работы: ${data.details.date}</li>
-                                                                          <li style="margin-bottom: 7px;">Время работы: с ${data.details.workTime.minTime} до ${data.details.workTime.maxTime}</li>
-                                                                          <li>${data.details.address}</li>
+                                                                          ${data.details ? renderDetails(data.details) : 'Доп. данные по работе не указаны'}
                                                                       </ul>
                                                                   </td>
                                                               </tr>
@@ -1476,4 +1472,11 @@ function ownerHtmlTemplate(data) {
           <!-- End -->
       </body>
   </html>`
+}
+
+function renderDetails(data) {
+    return
+    `<li style="margin-bottom: 7px;">Дата доставки: ${data.date}</li>
+    <li style="margin-bottom: 7px;">Время доставки: с ${data.workTime.minTime} до ${data.workTime.maxTime}</li>
+    <li>${data.address}</li>`
 }

@@ -382,7 +382,7 @@ function clientHtmlTemplate(data) {
                                                                         <li style="margin-bottom: 7px;">Дата заказа: ${data.createdAt}</li>
                                                                         <li style="margin-bottom: 7px;">Товар: ${data.name}</li>
                                                                         <li style="margin-bottom: 7px;">Количество:  ${data.count}</li>
-                                                                        ${data.details ? renderDetails(data.details) : 'Детали не указаны'}
+                                                                        ${data.details ? renderDetails(data.details) : 'Данные по доставке не указаны'}
                                                                     </ul>
                                                                 </td>
                                                             </tr>
