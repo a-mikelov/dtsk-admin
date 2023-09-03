@@ -1,31 +1,31 @@
 module.exports = {
-  async afterCreate(event) {
-    const { result } = event;
+    async afterCreate(event) {
+        const { result } = event;
 
-    try {
-      await strapi.plugins['email'].services.email.send({
-        to: `${result.client.email}`,
-        subject: `Заявка на ${result.name}`,
-        html: clientHtmlTemplate(result),
-      });
-    } catch (err) {
-      console.log(err);
-    }
+        try {
+            await strapi.plugins['email'].services.email.send({
+                to: `${result.client.email}`,
+                subject: `Заявка на ${result.name}`,
+                html: clientHtmlTemplate(result),
+            });
+        } catch (err) {
+            console.log(err);
+        }
 
-    try {
-      await strapi.plugins['email'].services.email.send({
-        to: `sales@dtsk.ru`,
-        subject: `Заказ на ${result.name} от ${result.client.name}`,
-        html: ownerHtmlTemplate(result),
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  },
+        try {
+            await strapi.plugins['email'].services.email.send({
+                to: `${process.env.EMAIL_ADDRESS_FROM}`,
+                subject: `Заказ на ${result.name} от ${result.client.name}`,
+                html: ownerHtmlTemplate(result),
+            });
+        } catch (err) {
+            console.log(err);
+        }
+    },
 };
 
 function clientHtmlTemplate(data) {
-  return `
+    return `
     <!DOCTYPE html>
 <html lang="ru-RU" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
     <head>
@@ -730,7 +730,7 @@ function clientHtmlTemplate(data) {
   `
 }
 function ownerHtmlTemplate(data) {
-  return  `
+    return `
     <!DOCTYPE html>
 
 <html lang="ru-RU" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">

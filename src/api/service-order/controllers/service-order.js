@@ -14,8 +14,6 @@ module.exports = createCoreController('api::service-order.service-order'), ({ st
 
         const { data, meta } = response
 
-        console.log('data', data)
-
         axios.get(process.env.BITRIX_URL, {
             params: {
                 'fields[TITLE]': `Заказ услуги ${data.attributes.name}`,
@@ -29,10 +27,10 @@ module.exports = createCoreController('api::service-order.service-order'), ({ st
             }
         })
             .then((response) => {
-                console.log('bitrix service response', response)
+                console.log('bitrix product response', response)
             })
             .catch((error) => {
-                console.log('bitrix service error', error)
+                console.log('bitrix product error', error)
             })
 
         return response;
