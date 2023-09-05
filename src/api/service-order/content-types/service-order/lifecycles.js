@@ -928,7 +928,7 @@ function ownerHtmlTemplate(data) {
                                                                           >
                                                                               <p style="margin: 0; font-size: 14px; text-align: center;">
                                                                                   <span style="font-size: 46px;">
-                                                                                      <strong><span style="font-size: 38px;">Новый заказ на услугу от</span> <span style="font-size: 38px; color: #ffc006;">${data.name}</span></strong>
+                                                                                      <strong><span style="font-size: 38px;">Новый заказ на</span> <span style="font-size: 38px; color: #ffc006;">${data.name}</span></strong>
                                                                                   </span>
                                                                               </p>
                                                                           </div>
