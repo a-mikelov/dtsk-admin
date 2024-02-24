@@ -1,1 +1,1 @@
-# 🚀 DTSK - admin
+# 🚀 DTSK-admin
